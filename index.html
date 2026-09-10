@@ -1,1 +1,25 @@
-<h1>Servidor HTTP funcionando no Windows normal!</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Filmes</title>
+</head>
+<body>
+  <h1>Catálogo de Filmes</h1>
+
+  <form id="form-filme">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" required>
+
+    <label for="genero">Gênero:</label>
+    <input type="text" id="genero" required>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <h2>Filmes cadastrados</h2>
+  <ul id="lista-filmes"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
