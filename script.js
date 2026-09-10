@@ -8,6 +8,9 @@ form.addEventListener('submit', function (evento) {
 
   const titulo = document.getElementById('titulo').value;
   const genero = document.getElementById('genero').value;
+  const ano = document.getElementById('ano').value;
+
+filmes.push({ titulo, genero, ano });
 
   filmes.push({ titulo, genero });
 
@@ -20,7 +23,7 @@ function atualizarLista() {
 
   filmes.forEach(function (filme) {
     const item = document.createElement('li');
-    item.textContent = filme.titulo + ' - ' + filme.genero;
+    item.textContent = filme.titulo + ' - ' + filme.genero + ' (' + filme.ano + ')';
     lista.appendChild(item);
   });
 }
